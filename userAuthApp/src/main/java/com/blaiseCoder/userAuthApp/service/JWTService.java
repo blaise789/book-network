@@ -7,4 +7,6 @@ import org.springframework.stereotype.Service;
 public interface JWTService {
     String extractUsername(String token);
     String generateJwtToken(UserDetails userDetails);
+    boolean isTokenValid(String token,UserDetails userDetails);
+
 }
